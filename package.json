@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Basic configuration of Webpack",
   "main": "index.js",
+  "homepage": "https://badmbadn/github.io/1.6kata/",
   "scripts": {
     "start": "set NODE_ENV=development&&webpack serve",
     "dev": "set NODE_ENV=development&&webpack",
