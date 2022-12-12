@@ -1,0 +1,141 @@
+.button {
+    &,
+    &:active {
+        display: flex;
+        align-items: center;
+        background: transparent;
+        border: none;
+        border-radius: 16px;
+        padding: 0;
+        cursor: pointer;
+        transition: all .3s;
+        text-align: left;
+    }
+    &--thicked,
+    &--thicked:active {
+        background-color: $color-hover-text;
+        border: 1px solid transparent;
+        padding: 4px 16px;
+        text-transform: uppercase;
+        transition: all .3s linear;
+        color: $white;
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: bold;
+
+        &::after {
+            content: '';
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: $color-hover-text;
+            margin-left: 10px;
+            background-repeat: no-repeat;
+            background-position: 52% 50%;
+            box-sizing: border-box;
+            background-image: url("../img/icons/white-arrow.svg");
+        }
+        &:hover {
+           //background-color: $white;
+            color: $color-hover-text;
+            border:1px solid $color-hover-text;
+            background-color: $white;
+        }
+    }
+
+    &__text {
+        display: block;
+        font-size: 16px;
+        line-height: 24pxrem;
+        font-family: 'TT Lakes';
+        font-weight: 500;
+        letter-spacing: -0.2px;
+        padding: 0 8px 0 0;
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $color-hover-text;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        box-sizing: border-box;
+        transition: all .4s;
+
+        &--menu {
+            background-image: url("../img/icons/menu.svg");
+        }
+        
+        &--tel {
+            background-image: url("../img/icons/tel.svg");
+        }
+        
+        &--message {
+            background-image: url("../img/icons/message.svg");
+        }
+        
+        &--login {
+            background-image: url("../img/icons/login.svg");
+        }
+        
+        &--repair {
+            background-image: url("../img/icons/repair.svg");
+        }
+        
+        &--status {
+            background-image: url("../img/icons/status.svg");
+        }
+        
+        &--close {
+            background-image: url("../img/icons/close.svg");
+        }
+        
+        &--search {
+            background-image: url("../img/icons/search.svg");
+        }
+        
+        &--arrow {
+            background-image: url("../img/icons/arrow-right.svg");
+        }
+        
+        &--outline {
+            background-color: $white;
+            border: 2px solid $color-hover-text;
+        }
+        
+        &--not-thicked {
+            background-color: transparent;
+            border: none;
+        }
+        
+        &--inline {
+            display: inline;
+            padding: 12px;
+        }
+    }
+    &--animation {
+        
+        transition: all .4s ease;
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+    }
+    &__color--animation {
+        transition: all .4s ease;
+        &:hover {
+            color: $color-hover-text;
+        }
+    }
+    &__bg--animation {
+        transition: all .4s ease;
+        &:hover {
+            background-color: $white;
+        }
+    }
+    
+}
+
+
+
+
